@@ -1,0 +1,11 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX ex: <http://example.com/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+ASK {
+  ex:a rdf:type dcat:Catalog ;
+       dcterms:title "Catalog A" .
+  ex:b rdf:type dcat:Catalog ;
+       dcterms:title "Catalog B" .
+}

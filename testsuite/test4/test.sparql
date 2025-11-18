@@ -1,0 +1,9 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX ex: <http://example.com/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+ASK {
+  ex:b rdf:type dcat:Dataset ;
+       dcterms:title "Dataset B updated" .
+}

@@ -1,0 +1,13 @@
+{
+  "added": 0,
+  "removed": 1,
+  "updated": 1,
+  "unchanged": 0,
+  "addedURIs": [],
+  "removedURIs": [
+    "http://example.com/b"
+  ],
+  "updatedURIs": [
+    "http://example.com/a"
+  ]
+}
