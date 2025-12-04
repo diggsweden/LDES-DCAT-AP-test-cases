@@ -6,17 +6,17 @@ Each folder contains:
 * `before.ttl` - how the RDF should look before applying LDES
 * `after.ttl` - how the RDF should look after applying LDES
 * `report.json` - a report of what happens when applying LDES
-* `feed.ttl` - the LDES feed to apply
+* `feed.trig` - the LDES feed to apply
 * `test.sparql` - the SPARQL ASK query that will be used to check the `after.ttl`
 
 ## What the tests does
 
-A selfcheck can be executed by running `npm run test`, it checks that `after.ttl` is correct by running the `test.sparql` query.
+A self-check can be executed by running `npm run test`, it checks that `after.ttl` is correct by running the `test.sparql` query.
 
 Note it is the responsibility of this testsuite to verify different LDES DCAT-AP implementations, not implement it itself. Hence, each implementation should implement a testing procedure to for every test:
 
-1. prepopulate a graph from `before.ttl`
-2. run the LDES DCAT-AP feed in `feed.ttl`
+1. pre-populate a graph from `before.ttl`
+2. run the LDES DCAT-AP feed in `feed.trig`
 3. record the resulting graph in `custom/testX/after.ttl`
 4. record the report in `custom/testX/report.json`
 
@@ -27,7 +27,7 @@ After this is done, run `npm run testCustom` to verify that the implementation w
 
 ## The tests (work in progress)
 
-1. Adding a catalog and nothing less
+1. Adding a catalog and nothing else
 2. Updating metadata for a catalog
 3. Adding a dataset to an existing catalog
 4. Updating a dataset

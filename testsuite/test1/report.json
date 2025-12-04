@@ -2,9 +2,9 @@
   "added": 1,
   "removed": 0,
   "updated": 0,
-  "unchanged": 1,
+  "unchanged": 2,
   "addedURIs": [
-    "http://example.com/a"
+    "http://example.com/b"
   ],
   "removedURIs": [],
   "updatedURIs": []
