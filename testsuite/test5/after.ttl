@@ -1,6 +1,12 @@
-@prefix dcat: <http://www.w3.org/ns/dcat#>.
-@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix ex: <http://example.com/> .
 
 ex:a a dcat:Catalog ;
-       dcterms:title "Catalog A" .
+    dcterms:title "Catalog A" ;
+    dcterms:description "A DCAT-AP catalog." ;
+    dcterms:publisher ex:pub .
+
+ex:pub a foaf:Agent ;
+    foaf:name "Publisher 1" .
