@@ -7,7 +7,7 @@ Each folder contains:
 * `after.ttl` - how the RDF should look after applying LDES
 * `report.json` - a report of what happens when applying LDES
 * `feed.trig` - the LDES feed to apply
-* `test.sparql` - the SPARQL ASK query that will be used to check the `after.ttl`
+* `test.sparql` - the SPARQL ASK query that will be used to check the significant changes in `after.ttl`
 
 ## What the tests does
 
