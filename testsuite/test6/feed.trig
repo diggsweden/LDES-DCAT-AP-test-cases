@@ -10,6 +10,7 @@
     tree:shape <https://semiceu.github.io/LDES-DCAT-AP-feeds/shape.ttl#ActivityShape> ;
     dcterms:title "Test DCAT-AP Feed" ;
     ldes:timestampPath as:published ;
+    ldes:versionOfPath as:object ;
     tree:view <> ;
     tree:member <https://example.com/c#Event1>, <https://example.com/b#Event1> .
 
