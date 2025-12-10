@@ -5,8 +5,8 @@ PREFIX ex: <http://example.com/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 ASK {
-  ex:b rdf:type dcat:Catalog ;
-    dcterms:title "Catalog B" ;
-    dcterms:description "A second DCAT-AP catalog." ;
+  ex:a rdf:type dcat:Catalog ;
+    dcterms:title "Catalog A" ;
+    dcterms:description "A DCAT-AP catalog." ;
     dcterms:publisher ex:pub .
 }

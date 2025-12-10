@@ -15,12 +15,12 @@
     tree:member <https://example.com/b#Event1> .
 
 <https://example.com/b#Event1> a as:Create ;
-    as:object ex:b ;
+    as:object ex:a ;
     as:published "2023-10-01T12:00:00Z"^^xsd:dateTime .
 
 <https://example.com/b#Event1> {
-    ex:b a dcat:Catalog ;
-        dcterms:title "Catalog B" ;
-        dcterms:description "A second DCAT-AP catalog." ;
+    ex:a a dcat:Catalog ;
+        dcterms:title "Catalog A" ;
+        dcterms:description "A DCAT-AP catalog." ;
         dcterms:publisher ex:pub .
 }
