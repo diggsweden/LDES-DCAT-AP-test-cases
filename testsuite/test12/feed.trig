@@ -1,0 +1,25 @@
+@prefix ldes: <https://w3id.org/ldes#> .
+@prefix tree: <https://w3id.org/tree#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix as: <https://www.w3.org/ns/activitystreams#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix ex: <http://example.com/> .
+
+<#Feed> a ldes:EventStream ;
+    tree:shape <https://semiceu.github.io/LDES-DCAT-AP-feeds/shape.ttl#ActivityShape> ;
+    dcterms:title "Test DCAT-AP Feed" ;
+    ldes:timestampPath as:published ;
+    ldes:versionOfPath as:object ;
+    tree:view <> ;
+    tree:member <https://example.com/c#Event1> .
+
+<https://example.com/c#Event1> a as:Update ;
+    as:object ex:c ;
+    as:published "2023-10-01T12:00:00Z"^^xsd:dateTime .
+
+<https://example.com/c#Event1> {
+    ex:c a dcat:DataService ;
+        dcterms:title "Data Service C Updated" ;
+        dcat:endpointURL <https://example.com/c/access> .
+}

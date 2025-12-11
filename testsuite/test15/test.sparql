@@ -1,0 +1,21 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX ex: <http://example.com/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+ASK {
+  ex:a a dcat:Catalog .
+  ex:c a dcat:DataService .
+  OPTIONAL {
+    ex:a dcat:dataset ?o .
+  }
+  OPTIONAL {
+    ex:c dcat:servesDataset ?o2 .
+  }
+  OPTIONAL {
+    ex:b a ?o3 .
+  }
+  FILTER ( !bound(?o) )
+  FILTER ( !bound(?o2) )
+  FILTER ( !bound(?o3) )
+}

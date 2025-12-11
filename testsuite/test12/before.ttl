@@ -1,0 +1,12 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ex: <http://example.com/> .
+
+ex:a a dcat:Catalog ;
+    dcterms:title "Catalog A" ;
+    dcat:service ex:c .
+
+ex:c a dcat:DataService ;
+    dcterms:title "Data Service C" ;
+    dcat:endpointURL <https://example.com/c/access> .
