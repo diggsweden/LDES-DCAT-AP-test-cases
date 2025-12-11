@@ -4,7 +4,9 @@ PREFIX ex: <http://example.com/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 ASK {
-  ex:a dcat:dataset ex:b .
+  ex:a a dcat:Catalog ;
+    dcat:dataset ex:b .
   ex:b a dcat:Dataset ;
-       dcterms:title "Dataset B" .
+    dcterms:title "Dataset B" ;
+    dcterms:description "A DCAT-AP dataset." .
 }
