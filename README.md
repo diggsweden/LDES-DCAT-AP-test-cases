@@ -27,7 +27,7 @@ After this is done, run `npm run testCustom` to verify that the implementation w
 
 ## The tests (work in progress)
 
-1. Adding a catalog and nothing else
+1. Adding a catalog
 2. Updating metadata for a catalog
 3. Adding a dataset to an existing catalog
 4. Updating a dataset

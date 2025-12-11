@@ -10,7 +10,7 @@
 
 <#Feed> a ldes:EventStream ;
     tree:shape <https://semiceu.github.io/LDES-DCAT-AP-feeds/shape.ttl#ActivityShape> ;
-    dcterms:title "Test DCAT-AP Feed" ;
+    dcterms:title "Test 24: Updating an agent" ;
     ldes:timestampPath as:published ;
     ldes:versionOfPath as:object ;
     tree:view <> ;
