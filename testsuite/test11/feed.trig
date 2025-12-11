@@ -20,7 +20,7 @@
 
 <https://example.com/c#Event1> {
     ex:c a dcat:DataService ;
-        dcterms:title "Data Service B" ;
+        dcterms:title "Data Service C" ;
         dcat:endpointURL <https://example.com/c/access> ;
         dcat:servesDataset ex:b .
 }

@@ -22,5 +22,5 @@
     ex:c a dcat:DataService ;
         dcterms:title "Data Service C" ;
         dcat:endpointURL <https://example.com/c/access> ;
-        dcat:service ex:b .
+        dcat:servesDataset ex:b .
 }

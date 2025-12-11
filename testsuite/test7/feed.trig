@@ -20,6 +20,6 @@
 
 <https://example.com/c#Event1> {
     ex:c a dcat:Distribution ;
-        dcterms:title "Distribution C updated" ;
+        dcterms:title "Distribution C Updated" ;
         dcat:accessURL <http://example.com/c/download> .
 }
