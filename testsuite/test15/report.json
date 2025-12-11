@@ -1,14 +1,44 @@
 {
-  "added": 0,
-  "removed": 1,
-  "updated": 2,
-  "unchanged": 1,
-  "addedURIs": [],
-  "removedURIs": [
-    "http://example.com/b"
-  ],
-  "updatedURIs": [
-    "http://example.com/a",
-    "http://example.com/c"
-  ]
+  "dcat:Catalog": {
+    "added": 0,
+    "removed": 0,
+    "updated": 1,
+    "unchanged": 0,
+    "addedURIs": [],
+    "removedURIs": [],
+    "updatedURIs": [
+      "http://example.com/a"
+    ]
+  },
+  "dcat:Dataset": {
+    "added": 0,
+    "removed": 1,
+    "updated": 0,
+    "unchanged": 0,
+    "addedURIs": [],
+    "removedURIs": [
+      "http://example.com/b"
+    ],
+    "updatedURIs": []
+  },
+  "dcat:DataService": {
+    "added": 0,
+    "removed": 0,
+    "updated": 1,
+    "unchanged": 0,
+    "addedURIs": [],
+    "removedURIs": [],
+    "updatedURIs": [
+      "http://example.com/c"
+    ]
+  },
+  "foaf:Agent": {
+    "added": 0,
+    "removed": 0,
+    "updated": 0,
+    "unchanged": 1,
+    "addedURIs": [],
+    "removedURIs": [],
+    "updatedURIs": []
+  }
 }

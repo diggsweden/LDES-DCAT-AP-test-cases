@@ -1,11 +1,13 @@
 {
-  "added": 1,
-  "removed": 0,
-  "updated": 0,
-  "unchanged": 0,
-  "addedURIs": [
-    "http://example.com/cp"
-  ],
-  "removedURIs": [],
-  "updatedURIs": []
+  "vcard:Kind": {
+    "added": 1,
+    "removed": 0,
+    "updated": 0,
+    "unchanged": 0,
+    "addedURIs": [
+      "http://example.com/cp"
+    ],
+    "removedURIs": [],
+    "updatedURIs": []
+  }
 }
