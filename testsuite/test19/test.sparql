@@ -7,8 +7,5 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 ASK {
   ex:d a dcat:Distribution ;
     dcat:accessService ex:c .
-  OPTIONAL {
-    ex:c a ?o .
-  }
-  FILTER ( !bound(?o) )
+  FILTER NOT EXISTS { ex:c ?p ?o }
 }

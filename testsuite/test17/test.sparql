@@ -11,8 +11,5 @@ ASK {
     dcterms:title "Distribution D" ;
     dcat:accessURL <http://example.com/d/download> ;
     dcat:accessService ex:c .
-  OPTIONAL {
-    ex:c a ?o .
-  }
-  FILTER ( !bound(?o) )
+  FILTER NOT EXISTS { ex:c ?p ?o }
 }

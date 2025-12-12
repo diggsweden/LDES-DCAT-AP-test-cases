@@ -10,8 +10,5 @@ ASK {
     dcterms:title "Data Service C" ;
     dcat:endpointURL <https://example.com/c/access> ;
     dcat:servesDataset ex:b .
-  OPTIONAL {
-    ex:b a ?o .
-  }
-  FILTER ( !bound(?o) )
+  FILTER NOT EXISTS { ex:b ?p ?o }
 }

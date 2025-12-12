@@ -6,8 +6,5 @@ PREFIX ex: <http://example.com/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 ASK {
-  OPTIONAL {
-    ex:cp a ?o .
-  }
-  FILTER ( !bound(?o) )
+  FILTER NOT EXISTS { ex:cp ?p ?o }
 }
