@@ -8,7 +8,7 @@
 
 <#Feed> a ldes:EventStream ;
     tree:shape <https://semiceu.github.io/LDES-DCAT-AP-feeds/shape.ttl#ActivityShape> ;
-    dcterms:title "Test 13: Updating a data service to connect it to a not yet existing dataset" ;
+    dcterms:title "Updating a data service to connect it to a not yet existing dataset" ;
     ldes:timestampPath as:published ;
     ldes:versionOfPath as:object ;
     tree:view <> ;

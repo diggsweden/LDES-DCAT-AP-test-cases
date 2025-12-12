@@ -9,7 +9,7 @@
 
 <#Feed> a ldes:EventStream ;
     tree:shape <https://semiceu.github.io/LDES-DCAT-AP-feeds/shape.ttl#ActivityShape> ;
-    dcterms:title "Test 26: Accepting non-dcat specific metadata, e.g. stuff from GeoDCAT" ;
+    dcterms:title "Accepting non-dcat specific metadata, e.g. stuff from GeoDCAT" ;
     ldes:timestampPath as:published ;
     ldes:versionOfPath as:object ;
     tree:view <> ;

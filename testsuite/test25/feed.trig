@@ -10,7 +10,7 @@
 
 <#Feed> a ldes:EventStream ;
     tree:shape <https://semiceu.github.io/LDES-DCAT-AP-feeds/shape.ttl#ActivityShape> ;
-    dcterms:title "Test 25: Removing an agent" ;
+    dcterms:title "Removing an agent" ;
     ldes:timestampPath as:published ;
     ldes:versionOfPath as:object ;
     tree:view <> ;

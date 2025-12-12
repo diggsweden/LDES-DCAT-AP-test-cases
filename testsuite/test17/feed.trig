@@ -8,7 +8,7 @@
 
 <#Feed> a ldes:EventStream ;
     tree:shape <https://semiceu.github.io/LDES-DCAT-AP-feeds/shape.ttl#ActivityShape> ;
-    dcterms:title "Test 17: Adding a distribution with a connection to a not yet existing data service" ;
+    dcterms:title "Adding a distribution with a connection to a not yet existing data service" ;
     ldes:timestampPath as:published ;
     ldes:versionOfPath as:object ;
     tree:view <> ;
