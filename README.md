@@ -9,11 +9,11 @@ Each folder contains:
 * `feed.trig` - the LDES feed to apply
 * `test.sparql` - the SPARQL ASK query that will be used to check the significant changes in `after.ttl`
 
-## What the tests does
+## What the tests do
 
 A self-check can be executed by running `npm run test`, it checks that `after.ttl` is correct by running the `test.sparql` query.
 
-Note it is the responsibility of this testsuite to verify different LDES DCAT-AP implementations, not implement it itself. Hence, each implementation should implement a testing procedure to for every test:
+Note it is the responsibility of this testsuite to verify different LDES DCAT-AP implementations, not implement it itself. Hence, each implementation should implement a testing procedure for every test:
 
 1. pre-populate a graph from `before.ttl`
 2. run the LDES DCAT-AP feed in `feed.trig`
@@ -37,15 +37,15 @@ After this is done, run `npm run testCustom` to verify that the implementation w
 8. Removing a distribution
 9. Adding a data service
 10. Adding a data service with a connection to an existing dataset
-11. Adding a data service connected to a yet not existing dataset
+11. Adding a data service connected to a not yet existing dataset
 12. Updating a data service
-13. Updating a data service to connect it to a yet not existing dataset
+13. Updating a data service to connect it to a not yet existing dataset
 14. Removing a data service
 15. Removing a dataset to which a data service is connected
 16. Adding a distribution with a connection to an existing data service
-17. Adding a distribution with a connection to a yet not existing data service
+17. Adding a distribution with a connection to a not yet existing data service
 18. Updating a distribution to connect it to an existing data service
-19. Updating a distribution to connect it to a yet not existing data service
+19. Updating a distribution to connect it to a not yet existing data service
 20. Adding a contact point
 21. Updating a contact point
 22. Removing a contact point
@@ -53,4 +53,4 @@ After this is done, run `npm run testCustom` to verify that the implementation w
 24. Updating an agent
 25. Removing an agent
 26. Accepting non-dcat specific metadata, e.g. stuff from GeoDCAT
-27. Updates that are the exact same time
+27. Updates that are at the exact same time
