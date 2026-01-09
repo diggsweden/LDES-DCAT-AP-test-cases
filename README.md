@@ -1,5 +1,7 @@
 # Test cases for harvesting DCAT-AP via LDES
 
+[LDES DCAT-AP Feeds](https://semiceu.github.io/LDES-DCAT-AP-feeds/index.html) allow data portals to publish changes to their catalog metadata as an append-only event stream, enabling harvesters to efficiently synchronize without downloading complete data dumps. This repository provides a test suite for validating implementations that consume these feeds.
+
 The tests in the testsuite are located in subfolders `test1`-`test27` in the `testsuite` folder.
 Each folder contains:
 
